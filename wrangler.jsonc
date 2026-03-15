@@ -10,7 +10,8 @@
     {
       "binding": "DB",
       "database_name": "dojo_local_db",
-      "database_id": "123"
+      "database_id": "123",
+      "migrations_dir": "./src/server/db/migrations"
     }
   ],
   "env": {
@@ -24,14 +25,15 @@
         {
           "binding": "DB",
           "database_name": "dojo_staging_db",
-          "database_id": "d08f637f-cf5b-4e9d-bf4e-fec2afa37a3c"
+          "database_id": "d08f637f-cf5b-4e9d-bf4e-fec2afa37a3c",
+          "migrations_dir": "./src/server/db/migrations"
         }
       ]
-    }
-  },
-  "production": {
-    "vars": {
-      "ENVIRONMENT": "production"
+    },
+    "production": {
+      "vars": {
+        "ENVIRONMENT": "production"
+      }
     }
   }
 }
