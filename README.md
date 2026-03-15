@@ -4,34 +4,7 @@
 bun create astro@latest -- --template basics
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-Read cloudflare docs - https://developers.cloudflare.com/
-Read Hono docs - https://hono.dev/docs/
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -44,6 +17,49 @@ All commands are run from the root of the project, from a terminal:
 | `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `bun astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+```
+bun run client      //run frontend
+bun run worker      //run backend
+
+bun run dev         //run both frontend and backend
+
+dryrun:staging      //builds the client
+deploy:prod         //push in cloudflare workers
+
+create:test:db      //create test db
+destroy:test:db    //destroy test db
+
+bun run test        //creates test db, runs test and destroys db
+```
+
+## Docs
+
+cloudflare - https://dash.cloudflare.com/98e6e417612969bebbdf298b9c15d264/workers-and-pages
+
+cloudflare docs - https://developers.cloudflare.com/
+
+Hono docs - https://hono.dev/docs/
+
+Bun docs - https://bun.sh/docs
+
+
+## Tech stack
+
+- Astro
+- React
+- TailwindCSS
+- Daisy UI
+- Zod
+- Bun
+- Hono
+- Cloudflare D1
+- Drizzle ORM
+- Prettier 
+- Sqlite
+
+
+## Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+inspired from this playlist - https://www.youtube.com/playlist?list=PLLCXhfggeqE97wnuesWK9UHkYEv2-b8FB
