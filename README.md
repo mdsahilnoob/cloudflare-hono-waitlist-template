@@ -6,6 +6,9 @@ bun create astro@latest -- --template basics
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
+Read cloudflare docs - https://developers.cloudflare.com/
+Read Hono docs - https://hono.dev/docs/
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:

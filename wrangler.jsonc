@@ -1,5 +1,37 @@
 {
   "name": "cloudflare-hono-waitlist-template",
   "compatibility_date": "2026-03-15",
-  "main": "src/server/index.ts"
+  "main": "src/server/index.ts",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dojo_local_db",
+      "database_id": "123"
+    }
+  ],
+  "env": {
+    "staging": {
+      "vars": {
+        "ENVIRONMENT": "staging",
+        "CF_ACCESS_DOMAIN": "https://mdsahilnoob.cloudflareaccess.com",
+        "POLICY_AUD": "4c4dae7f50990da4320790c1cccbe372c4e1a3a214b2c5752385cb9e3d4e2e3a"
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "dojo_staging_db",
+          "database_id": "d08f637f-cf5b-4e9d-bf4e-fec2afa37a3c"
+        }
+      ]
+    }
+  },
+  "production": {
+    "vars": {
+      "ENVIRONMENT": "production"
+    }
+  }
 }
